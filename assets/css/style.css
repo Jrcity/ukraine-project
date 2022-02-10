@@ -215,7 +215,7 @@ h6 {
 }
 
 .navigation__list {
-  background-color: #fff;
+  /* background-color: #fff; */
   position: absolute;
   width: 100%;
   display: flex;
@@ -249,6 +249,11 @@ h6 {
   display: inline;
 }
 
+.navigation__item__end .navigation__link:first-child {
+  color: #eb1817;
+  font-weight: 700 !important;
+}
+
 .navigation__link:link,
 .navigation__link:visited {
   /* display: inline-block; */
@@ -269,9 +274,13 @@ h6 {
 }
 .navigation__link:hover,
 .navigation__link:active {
-  background-position: 100%;
-  color: rgb(11, 115, 146);
-  transform: translateX(-2rem);
+  /* background-position: 100%; */
+  color: #152a47;
+  position: relative;
+  background-color: #f0f2f5;
+  padding: 0.6rem 0.9rem;
+  border-radius: 30px;
+  /* transform: translateX(-2rem); */
 }
 
 /* .navigation__list {
