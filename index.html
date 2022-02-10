@@ -128,19 +128,33 @@
 
 
       <div class="navigation">
-         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+         <!-- <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
          <label for="navi-toggle" class="navigation__button">
              <span class="navigation__icon"></span>
          </label>
-         <div class="navigation__background"> &nbsp;</div>
+         <div class="navigation__background"> &nbsp;</div> -->
 
-         <nav class="navigation__nav">
+         <div class="navigation__menu__desktop">
+          <ul>
+            <li>
+              <ion-icon name="call-outline" class="icon-tel"></ion-icon>
+              <a href="#">Замовити дзвінок</a>
+            </li>
+            <li><a href="#" onclick="showMenu()">Меню</a></li>
+          </ul>
+         </div>
+
+         <nav class="navigation__nav" id="side__nav">
+          <ion-icon name="close-outline" class="icon-close" onclick="hideMenu()"></ion-icon>
              <ul class="navigation__list">
-                 <li class="navigation__item"><a href="#" class="navigation__link"> Home</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link"> Who we are</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link"> What we do</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link">Testimonies</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link"> Contact Us</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Головна</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Послуги</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Про нас</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
+                 <li class="navigation__item navigation__item__end">
+                   <a href="#" class="navigation__link">UA</a>
+                   <a href="#" class="navigation__link">ENG</a>
+                 </li>
              </ul>
          </nav>
          </div>
@@ -167,13 +181,13 @@
          <li><a class="getstarted scrollto" href="#about">UE</a></li>
          <li><a class="getstarted scrollto" href="#about">EN</a></li> -->
 
-              </li>
+              <!-- </li>
 
             </ul>
-          </li>
+          </li> -->
 
         <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
-      </nav><!-- .navbar -->
+      <!-- </nav>.navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -195,7 +209,7 @@
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
           <img src="assets/img/lady.png" class="img-fluid animated" alt="">
-            <img src="assets/img/Rectangle.png" class="position-absolute top-70 start-50" alt="">
+            <img src="assets/img/Rectangle.png" class="rec01" alt="">
               <img src="assets/img/Rectangle.png" class="position-absolute bottom-0 end-0" alt="">
         </div>
       </div>
@@ -518,6 +532,13 @@
 
 
   <script>
+    // Show Menu
+  let sideNav = document.getElementById('side__nav');
+
+  const showMenu = () => (sideNav.style.right = '0');
+
+  const hideMenu = () => (sideNav.style.right = '-300px');
+
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -528,6 +549,15 @@
     document.getElementById("main").style.marginLeft= "0";
   }
   </script>
+
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule=""
+src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+></script>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
