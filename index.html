@@ -202,7 +202,7 @@
         <h2>Ми понад усе прагнемо посилити позиції наших клієнтівта допомагаємо їм 24/7. </h2>
           <div class="d-flex">
             <a href="#about" class="btn-get-started scrollto">Дізнатися більше</a>
-            <a href="#about" class="btn-get-started2 scrollto">Замовити
+            <a href="#about" class="btn-get-started2 scrollto" id="btnOpenModal">Замовити
               дзвінок</a>
 
           </div>
@@ -216,6 +216,39 @@
     </div>
 
   </section><!-- End Hero -->
+
+  <div class="modal__box hidden" id="modal">
+    <ion-icon name="close-outline" class="close-modal" id="btnCloseModal"></ion-icon>
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center gap-3 mt-5">
+        <h3 class="modal__title">Замовити консультацію зі знижкою </h3>
+        <span class="modal__tag">249€</span>
+      </div>
+
+      <form class="modal__form">
+        <div class="form-group mb-3">
+          <label>Як до Вас звeртатися?</label>
+          <input type="text" placeholder="Введіть Ваше ім’я" class="form-control no-border" />
+        </div>
+        <div class="form-group mb-3">
+          <label>Ваш номер телефону</label>
+          <input type="text" placeholder="000-00-00-000" class="form-control no-border" />
+        </div>
+        <div class="form-group mb-3">
+          <label>E-mail</label>
+          <input type="text" placeholder="Ваша електронна пошта" class="form-control no-border" />
+        </div>
+        <div class="form-group mb-3">
+          <label>Чим ми можемо Вам допомогти?</label>
+          <input type="text" placeholder="Коротко опишіть, з якого приводу Вам необхідна консультація" class="form-control no-border" />
+        </div>
+        <div class="form-group my-4 d-flex justify-content-center">
+          <button class="modal__btn">Замовити дзвінок</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="overlay hidden" id="overlay"></div>
 
   <main id="main">
 
@@ -548,16 +581,38 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+
+  // Modal Component
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('overlay');
+  const btnOpenModal = document.getElementById('btnOpenModal');
+  const btnCloseModal = document.getElementById('btnCloseModal');
+  const body = document.querySelector('body');
+
+  btnOpenModal.addEventListener('click', function(){
+    modal.classList.toggle('hidden');
+    overlay.classList.toggle('hidden');
+
+    if(!modal.classList.contains('hidden')){
+      body.style.overflow = 'hidden';
+    }else {
+      // Enabled scroll
+      body.style.overflow = 'auto'
+    }
+  })
+
+  const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
   </script>
 
-<script
-type="module"
-src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-nomodule=""
-src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
