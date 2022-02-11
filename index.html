@@ -265,7 +265,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/law.png" ></i></div>
               <h4><a href="">Адміністрат
@@ -274,7 +274,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/paper.png"></i></div>
               <h4><a href="">Аудиторські</a></h4>
@@ -282,7 +282,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/family.png"></i></div>
               <h4><a href="">Сімейне право</a></h4>
@@ -290,7 +290,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/user.png"></i></div>
               <h4><a href="">Адвокат по успадкуванню</a></h4>
@@ -298,7 +298,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/group.png"></i></div>
               <h4><a href="">Корпоративне </a></h4>
@@ -306,7 +306,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
             <div class="icon-box">
               <div class="icon"><img src="assets/img/search.png"></i></div>
               <h4><a href="">Трудове право</a></h4>
@@ -317,9 +317,78 @@
 
         </div>
 
+        <div class="row hidden__box" id="hiddenBox">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/law.png" ></i></div>
+              <h4><a href="">Адміністрат
+                ивне</a></h4>
+             <p>право і процес</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/paper.png"></i></div>
+              <h4><a href="">Аудиторські</a></h4>
+              <p>послуги</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/family.png"></i></div>
+              <h4><a href="">Сімейне право</a></h4>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/user.png"></i></div>
+              <h4><a href="">Адвокат по успадкуванню</a></h4>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/group.png"></i></div>
+              <h4><a href="">Корпоративне </a></h4>
+              <p>право</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/search.png"></i></div>
+              <h4><a href="">Трудове право</a></h4>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/group.png"></i></div>
+              <h4><a href="">Корпоративне </a></h4>
+              <p>право</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service__box">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/search.png"></i></div>
+              <h4><a href="">Трудове право</a></h4>
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
       <div class="wrapper">
-    <button class="button">Усі послуги</button>
+    <button class="button" id="btnShowHiddenBox">Усі послуги</button>
 </div>
     </section><!-- End Services Section -->
 
@@ -615,6 +684,16 @@
 
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+
+    // Hidden Box
+    const hiddenBox = document.getElementById('hiddenBox');
+    const btnShowHiddenBox = document.getElementById('btnShowHiddenBox');
+
+    btnShowHiddenBox.addEventListener('click', function(){
+      hiddenBox.classList.toggle('hidden__box');
+      // hiddenBox.style.display = 'block';
+    })
 
   </script>
 

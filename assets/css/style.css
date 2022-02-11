@@ -860,6 +860,12 @@ section {
   position: relative;
   z-index: 2;
 }
+
+.service__box {
+  /* width: 20.5rem;
+  height: 20.5rem; */
+  border-radius: 20px !important;
+}
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
@@ -1010,6 +1016,10 @@ section {
   color: #808080;
 }
 
+.hidden__box {
+  display: none;
+}
+
 .wrapper {
   text-align: center;
 }
@@ -1021,6 +1031,7 @@ section {
   left: 437px;
   top: 669px;
   background: #eb1817;
+  border: 0;
   border-radius: 30px;
   font-family: gotham;
   font-style: normal;
@@ -1037,7 +1048,7 @@ section {
   order: 0;
   flex-grow: 0;
   margin: 30px 0px;
-  box-shadow: 3px 2px #888888;
+  /* box-shadow: 3px 2px #888888; */
 }
 /*--------------------------------------------------------------
 # Portfolio
