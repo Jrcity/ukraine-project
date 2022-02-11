@@ -694,6 +694,14 @@ h6 {
   border-radius: 30px;
 }
 
+.form__component {
+  /* padding: 0.5rem !important; */
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(21, 42, 71, 0.25);
+  border-radius: 30px;
+}
+
 .close-modal {
   color: #eb1817;
   font-weight: bold;
@@ -748,6 +756,18 @@ h6 {
   border-radius: 30px;
   border: 0;
   margin: 0.8rem auto 0;
+}
+
+.form__btn {
+  color: #fff;
+  background-color: #eb1817;
+  font-weight: bold;
+  font-size: 0.88rem;
+  padding: 0.625rem 2.25rem;
+  box-shadow: 0px 4px 30px rgba(235, 24, 23, 0.25);
+  border-radius: 30px;
+  border: 0;
+  margin: 1.2rem auto 0;
 }
 
 .overlay {
@@ -1018,6 +1038,8 @@ section {
 
 .hidden__box {
   display: none;
+  transition: ease-in-out 0.3s;
+  background-color: red;
 }
 
 .wrapper {
@@ -1338,24 +1360,60 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #16df7e;
-  border-bottom: 3px solid #16df7e;
-  padding: 30px;
+  /* padding: 30px; */
   width: 100%;
   background-color: #f9f9fa;
+  border-radius: 1.25rem;
+  box-shadow: 0px 4px 30px rgba(21, 42, 71, 0.25);
+}
+
+.contact__map {
+  border-radius: 1.25rem;
 }
 .contact .info i {
   font-size: 20px;
-  color: #16df7e;
+  color: #152a47;
+  border: 1px solid #152a47;
+  font-weight: bold;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+}
+.contact__info {
+  margin: 0 auto;
+}
+
+.social__link__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.social__link__menu li {
+  /* color: #152a47; */
+  /* width: 2rem; */
+  /* background-color: 01; */
+}
+
+.social__link__menu a:link,
+.social__link__menu a:visited {
+  color: #152a47;
+  /* background-color: #152a47; */
+  font-size: 2rem;
+  /* padding: 0.7rem; */
+}
+
+.contact__info p {
+  color: #070707 !important;
+  font-weight: 400 !important;
 }
 .contact .info h4 {
   padding: 0 0 0 60px;
@@ -1388,13 +1446,13 @@ section {
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #16df7e;
+  background: #152a47;
   color: #fff;
 }
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #16df7e;
+  background: #152a47;
   color: #fff;
 }
 .contact .php-email-form {
