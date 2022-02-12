@@ -1050,6 +1050,10 @@ section {
   margin-bottom: 0;
 }
 
+.about-img {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
