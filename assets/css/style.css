@@ -925,6 +925,53 @@ section {
   font-size: 14px;
 }
 
+.service__box {
+  position: relative;
+}
+
+.service__box:hover,
+.service__box .icon-box:hover {
+  background-color: #152a47;
+  transition: all 0.4s;
+  /* color: #fff !important; */
+}
+
+.service__box:hover h4 {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%);
+  transition: all 0.4s;
+}
+
+.service__box:hover h4 a {
+  color: #fff !important;
+}
+
+.service__box:hover .icon,
+.service__box:hover p {
+  /* background-color: red; */
+  /* display: none; */
+  visibility: hidden;
+}
+
+.service__box:hover::after {
+  content: 'Дізнатися більше';
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 5s;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
