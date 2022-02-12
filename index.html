@@ -384,12 +384,55 @@
             </div>
 
           </div>
+
+          
+        </div>
+        <div class="wrapper mb-5">
+          <button class="button" id="btnShowHiddenBox">Усі послуги</button>
+      </div>
+
+        <div class="row hidden" id="serviceHiddenBox">
+          <h1 class="text-center mb-5">Юридичний супровід<br />
+            імпорту та експорту</h1>
+
+            
+            <p class="text-center mb-5">Працюємо за такими запитами:</p>
+
+            <div class="col-lg-6">
+              <ul class="service__item1">
+                <li>Консультації з питань імпорту та експорту</li>
+                <li>Планування і оптимізація питаньпо податках і зборах</li>
+                  <li>Розробка і аналіз зовнішньоекономічних договорів</li>
+                 <li> Допомога в отриманні сертифікатів, спеціальних ліцензій і квот</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-6">
+              <ul class="service__item2">
+                <li>Судовий захист і вирішення спорів з митними органами</li>
+
+                  <li>Судовий захист у спорах з іноземними контрагентами</li>
+                  
+                   <li>Оптимізація діяльності підприємства до вимог валютного законодавства)</li>
+                  <li>Допомога при порушенні митних прав</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-12 service__card">
+              <div>
+                <h3>Замовити консультацію </h3>
+                <div class="service__card__inner">
+                  <h4>зі знижкою</h4>
+                  <span>249€</span>
+                </div>
+                <p>Залиште Ваш номер і отримайте консультацію вже сьогодні.</p>
+              </div>
+              <div class="fat__btn">Замовити дзвінок</div>
+            </div>
         </div>
 
       </div>
-      <div class="wrapper">
-    <button class="button" id="btnShowHiddenBox">Усі послуги</button>
-</div>
+      
     </section><!-- End Services Section -->
 
 
@@ -725,6 +768,15 @@ overlay.addEventListener('click', closeModal);
       hiddenBox.classList.toggle('hidden__box');
       // hiddenBox.style.display = 'block';
     })
+
+    // Service Box
+    const boxes = document.querySelectorAll('.service__box');
+    const serviceHiddenBox = document.getElementById('serviceHiddenBox')
+
+    for(let i = 0; i < boxes.length; i++)
+      boxes[i].addEventListener('click', function(){
+        serviceHiddenBox.classList.remove('hidden');
+      })
 
   </script>
 

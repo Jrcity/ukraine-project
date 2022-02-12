@@ -972,6 +972,60 @@ section {
   transition: all 5s;
 }
 
+.service__card {
+  background-color: #fff !important;
+  margin-top: 1.8rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 30px rgba(21, 42, 71, 0.25);
+  border-radius: 30px;
+}
+
+.service__card h3,
+.service__card h4,
+.service__card span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.service__card__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.service__card__inner span {
+  background-color: #eb1817;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 100px;
+}
+
+.service__item1,
+.service__item2 {
+  color: #070707;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.service__hidden__box {
+  display: none;
+}
+
+.fat__btn {
+  background-color: #eb1817;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 48px;
+  border-radius: 100px;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
