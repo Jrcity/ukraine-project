@@ -147,10 +147,10 @@
          <nav class="navigation__nav" id="side__nav">
           <ion-icon name="close-outline" class="icon-close" onclick="hideMenu()"></ion-icon>
              <ul class="navigation__list">
-                 <li class="navigation__item"><a href="#" class="navigation__link">Головна</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link">Послуги</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link">Про нас</a></li>
-                 <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
+                 <li class="navigation__item"><a href="#services" class="navigation__link">Головна</a></li>
+                 <li class="navigation__item"><a href="#about" class="navigation__link">Послуги</a></li>
+                 <li class="navigation__item"><a href="#team" class="navigation__link">Про нас</a></li>
+                 <li class="navigation__item"><a href="#contact" class="navigation__link">Контакти</a></li>
                  <li class="navigation__item navigation__item__end">
                    <a href="#" class="navigation__link">UA</a>
                    <a href="#" class="navigation__link">ENG</a>
@@ -201,8 +201,8 @@
           <h1 class="hero__heading">Лідери юридичного ринку</h1>
         <h2>Ми понад усе прагнемо посилити позиції наших клієнтівта допомагаємо їм <span class="hero__emp__text">24/7</span>. </h2>
           <div class="d-flex">
-            <a href="#about" class="btn-get-started scrollto">Дізнатися більше</a>
-            <a href="#about" class="btn-get-started2 scrollto" id="btnOpenModal">Замовити
+            <a href="#services" class="btn-get-started scrollto">Дізнатися більше</a>
+            <a href="#" class="btn-get-started2 scrollto" id="btnOpenModal">Замовити
               дзвінок</a>
 
           </div>
@@ -675,6 +675,12 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+
+  // document.body.addEventListener('click', function(){
+  //   if(sideNav.style.right !== '0'){
+  //     sideNav.style.right = '0'
+  //   }
+  // })
 
   // Modal Component
   const modal = document.getElementById('modal');

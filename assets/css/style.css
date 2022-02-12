@@ -668,24 +668,11 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40%;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  */
+
   padding: 1.5rem;
   z-index: 100000;
 
-  position: absolute;
-  /* width: 596px; */
-  /* height: 625px; */
-  /* left: 0px;
-  top: 0px; */
-
-  /* white */
+  /* position: absolute; */
 
   background: #ffffff;
   /* S-1 */
