@@ -137,8 +137,9 @@
          <div class="navigation__menu__desktop">
           <ul>
             <li>
-              <ion-icon name="call-outline" class="icon-tel"></ion-icon>
-              <a href="#">Замовити дзвінок</a>
+              <!-- <ion-icon name="call-outline" class="icon-tel"></ion-icon> -->
+              <!-- <a href="#">Замовити дзвінок</a> -->
+              <div id="google_translate_element"></div>
             </li>
             <li><a href="#" onclick="showMenu()">Меню</a></li>
           </ul>
@@ -1255,7 +1256,29 @@
 
 
   <script>
-    // Show Menu
+    /****************************
+    // GOOGLE TRANSLATOR
+    ****************************/
+    // function googleTranslateElementInit() {
+    //     new google.translate.TranslateElement(
+    //       { pageLanguage: 'en' },
+    //       'google_translate_element'
+    //     );
+    //   }
+
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'ua' , 
+        includedLanguages: 'ua,en'
+        // includedLanguages : 'ar,xx,yy'
+      }, 
+      'google_translate_element');
+  }
+
+    /****************************
+    // SHOW MENU
+    ****************************/
   let sideNav = document.getElementById('side__nav');
 
   const showMenu = () => (sideNav.style.right = '0');
@@ -1278,7 +1301,9 @@
   //   }
   // })
 
-  // Modal Component
+  /****************************
+    // MODAL COMPONENT
+    ****************************/
   const modal = document.getElementById('modal');
   const overlay = document.getElementById('overlay');
   const btnOpenModal = document.getElementById('btnOpenModal');
@@ -1313,7 +1338,9 @@ btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
 
-    // Hidden Box
+    /****************************
+    // HIDDEN BOX
+    ****************************/
     const hiddenBox = document.getElementById('hiddenBox');
     const btnShowHiddenBox = document.getElementById('btnShowHiddenBox');
     const btnHideServiceBox = document.getElementById('btnHideServiceBox');
@@ -1464,7 +1491,15 @@ overlay.addEventListener('click', closeModal);
     //   })
     // }
 
+
+    
+
   </script>
+  <script
+  type="text/javascript"
+  src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -91,6 +91,25 @@ h6 {
 #header .logo img {
   max-height: 40px;
 }
+
+.goog-te-combo {
+  display: block;
+  width: 100%;
+  /* padding: 0.375rem 0.75rem; */
+  padding: 0.1rem 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 @media (max-width: 991px) {
   #header {
     padding: 12px 0;
