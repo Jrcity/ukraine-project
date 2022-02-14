@@ -110,89 +110,74 @@
 <body>
 
 
-  <header>
-    <div class="px-3 py-2 bg-dark text-white fixed-top bg-white" id="header">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-sm-4 my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
-            <img src="assets/img/Frame.png" alt="" class="img-fluid">
-          </a>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
 
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <!-- <a href="#" class="nav-link text-secondary">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                Home
-              </a> -->
-              <div id="google_translate_element"></div>
-            </li>
-            <li class="ml-4">
-              <!-- <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                Dashboard
-              </a> -->
-              <div class="dropdownHover">
-                <button class="dropbtnHover">Меню</button>
-                <div class="dropdown-contentHover">
-                 <a href="#hero" class="navigation__link">Головна</a>
-                 <a href="#about" class="navigation__link">Послуги</a>
-                 <a href="#team" class="navigation__link">Про нас</a>
-                 <a href="#contact" class="navigation__link">Контакти</a>
-                </div>
-              </div>
-            </li>
-            <!-- <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                Orders
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-                Customers
-              </a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-light text-dark me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
         </div>
       </div>
-    </div> -->
+    </div>
   </header>
 
   <!-- ======= Header ======= -->
-  <!-- <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top">
+
+<!-- <nav id="navbar" class="navbar">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#hero">Головна</a>
+      <a href="#about">Послуги</a>
+      <a href="#portfolio">Про нас</a>
+      <a href="#contact">Контакти</a>
+      <li><a class="getstarted scrollto" href="#about">UE</a></li>
+      <li><a class="getstarted scrollto" href="#about">EN</a></li>
+    </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+    </div> -->
 
     <div class="container d-flex align-items-center justify-content-between">
+
+      <!--<h1 class="logo"><a href="index.html">eNno</a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo"><img src="assets/img/Frame.png" alt="" class="img-fluid"></a>
 
+
       <div class="navigation">
+         <!-- <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+         <label for="navi-toggle" class="navigation__button">
+             <span class="navigation__icon"></span>
+         </label>
+         <div class="navigation__background"> &nbsp;</div> -->
 
          <div class="navigation__menu__desktop">
           <div class="navbar-nav d-flex justify-content-between">
             <li>
+              <!-- <ion-icon name="call-outline" class="icon-tel"></ion-icon> -->
+              <!-- <a href="#">Замовити дзвінок</a> -->
               <div id="google_translate_element"></div>
             </li>
             <li>
+              
               <div class="dropdownHover">
+                <!-- <a href="#" class="dropbtnHover" onclick="showMenu()">Меню</a></li> -->
                <button class="dropbtnHover">Меню</button>
                <div class="dropdown-contentHover">
                 <a href="#hero" class="navigation__link">Головна</a>
@@ -204,11 +189,44 @@
              </li>
           </div>
          </div>
+
+         
+
+         <nav class="navigation__nav" id="side__nav">
+          <ion-icon name="close-outline" class="icon-close" onclick="hideMenu()"></ion-icon>
+             <ul class="navigation__list">
+                 <li class="navigation__item"><a href="#hero" class="navigation__link">Головна</a></li>
+                 <li class="navigation__item"><a href="#about" class="navigation__link">Послуги</a></li>
+                 <li class="navigation__item"><a href="#team" class="navigation__link">Про нас</a></li>
+                 <li class="navigation__item"><a href="#contact" class="navigation__link">Контакти</a></li>
+                 <li class="navigation__item navigation__item__end">
+                   <a href="#" class="navigation__link">UA</a>
+                   <a href="#" class="navigation__link">ENG</a>
+                 </li>
+             </ul>
+         </nav>
          </div>
+       <!-- <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Головна</a></li>
+         <li><a class="nav-link scrollto" href="#about">Послуги</a></li>
+         <li><a class="nav-link scrollto o" href="#portfolio">Про нас</a></li>
+         </li>
+         <li><a class="nav-link scrollto" href="#contact">Контакти</a></li>
+         <li><a class="nav-link scrollto" href="#contact"><img src="assets/img/Vector.png" alt="" class="img-fluid">Контакти</a></li>
+         <li><a class="getstarted scrollto" href="#about">UE</a></li>
+         <li><a class="getstarted scrollto" href="#about">EN</a></li> -->
+
+              <!-- </li>
+
+            </ul>
+          </li> -->
+
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      <!-- </nav>.navbar -->
 
     </div>
-  </header> -->
-  <!-- End Header -->
+  </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">

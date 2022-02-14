@@ -11,6 +11,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #444444;
+  overflow-x: hidden;
   /* padding-right: 0.9rem; */
 }
 
@@ -31,6 +32,11 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
+}
+
+h2,
+h3 {
+  color: #070707 !important;
 }
 
 /*--------------------------------------------------------------
@@ -70,7 +76,8 @@ h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 20px 0 !important;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.05);
   /* height: 100vh; */
 }
 #header.header-scrolled {
@@ -86,7 +93,7 @@ h6 {
   letter-spacing: 0.5px;
 }
 #header .logo a {
-  color: #5f687b;
+  color: #070707;
 }
 #header .logo img {
   max-height: 40px;
@@ -119,6 +126,8 @@ h6 {
   /* background-color: #04aa6d; */
   color: #333;
   font-weight: bold;
+  margin-left: 32px;
+  border-radius: 100px;
   padding: 16px 32px;
   font-size: 16px;
   border: none;
