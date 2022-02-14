@@ -114,7 +114,7 @@
     <div class="px-3 py-2 bg-dark text-white fixed-top bg-white" id="header">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-sm-4 my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+          <a href="/" class="d-flex align-items-center mb-sm-4 my-2 my-lg-0 me-lg-auto text-white text-decoration-none" id="brand-logo">
             <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
             <img src="assets/img/Frame.png" alt="" class="img-fluid">
           </a>
@@ -212,8 +212,29 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6 img-container">
+          <!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+          <img src="assets/img/lady.png" class="img-fluid animated" alt="">
+            <img src="assets/img/Rectangle.png" class="rec01" alt="">
+              <img src="assets/img/Rectangle.png" class="position-absolute bottom-0 end-0" alt="">
+        </div>
+        <div class="col-lg-6 hero-header">
+          <h1 class="display-5 fw-bold lh-1 mb-4">Лідери юридичного ринку</h1>
+          <p class="lead mb-5">Ми понад усе прагнемо посилити позиції наших клієнтівта допомагаємо їм <span class="hero__emp__text">24/7</span>. </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start my-4 btn-container">
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+            <a href="#services" class="btn-get-started">Дізнатися більше</a>
+            <a href="#" class="btn-get-started2" id="btnOpenModal">Замовити
+              дзвінок</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 class="hero__heading">Лідери юридичного ринку</h1>
@@ -231,7 +252,7 @@
               <img src="assets/img/Rectangle.png" class="position-absolute bottom-0 end-0" alt="">
         </div>
       </div>
-    </div>
+    </div> -->
 
   </section><!-- End Hero -->
 
@@ -1023,7 +1044,7 @@
 
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Про нас</h3>
+            <h2>Про нас</h2>
             <p class="fst-italic">
             Об’єднали команду талановитих, висококваліфікованих  адвокатів, юристів й науковців. Ми гарантуємо:
             </p>
