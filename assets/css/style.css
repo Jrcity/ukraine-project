@@ -110,6 +110,53 @@ h6 {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.nav-link:hover .dropdown-menu {
+  display: block;
+}
+
+.dropbtnHover {
+  /* background-color: #04aa6d; */
+  color: #333;
+  font-weight: bold;
+  padding: 16px 32px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdownHover {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentHover {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-contentHover a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contentHover:hover a:hover {
+  background-color: #ddd;
+}
+
+.dropdownHover:hover .dropdown-contentHover {
+  display: block;
+}
+
+.dropdownHover:hover .dropbtnHover {
+  /* background-color: #3e8e41; */
+}
+
 @media (max-width: 991px) {
   #header {
     padding: 12px 0;

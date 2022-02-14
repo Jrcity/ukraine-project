@@ -25,6 +25,10 @@
   crossorigin="anonymous"></script>
 
 
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script> -->
+
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -135,15 +139,29 @@
          <div class="navigation__background"> &nbsp;</div> -->
 
          <div class="navigation__menu__desktop">
-          <ul>
+          <div class="navbar-nav d-flex justify-content-between">
             <li>
               <!-- <ion-icon name="call-outline" class="icon-tel"></ion-icon> -->
               <!-- <a href="#">Замовити дзвінок</a> -->
               <div id="google_translate_element"></div>
             </li>
-            <li><a href="#" onclick="showMenu()">Меню</a></li>
-          </ul>
+            <li>
+              
+              <div class="dropdownHover">
+                <!-- <a href="#" class="dropbtnHover" onclick="showMenu()">Меню</a></li> -->
+               <button class="dropbtnHover">Меню</button>
+               <div class="dropdown-contentHover">
+                <a href="#hero" class="navigation__link">Головна</a>
+                <a href="#about" class="navigation__link">Послуги</a>
+                <a href="#team" class="navigation__link">Про нас</a>
+                <a href="#contact" class="navigation__link">Контакти</a>
+               </div>
+             </div>
+             </li>
+          </div>
          </div>
+
+         
 
          <nav class="navigation__nav" id="side__nav">
           <ion-icon name="close-outline" class="icon-close" onclick="hideMenu()"></ion-icon>
