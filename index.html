@@ -272,22 +272,22 @@
         <span class="modal__tag">249€</span>
       </div>
 
-      <form class="modal__form">
+      <form class="modal__form" action="https://formspree.io/f/xknyrjyd" method="POST">
         <div class="form-group mb-3">
           <label>Як до Вас звeртатися?</label>
-          <input type="text" placeholder="Введіть Ваше ім’я" class="form-control no-border" />
+          <input type="text" placeholder="Введіть Ваше ім’я" name="fullName" class="form-control no-border" />
         </div>
         <div class="form-group mb-3">
           <label>Ваш номер телефону</label>
-          <input type="text" placeholder="000-00-00-000" class="form-control no-border" />
+          <input type="text" placeholder="000-00-00-000" name="phoneNumber" class="form-control no-border" />
         </div>
         <div class="form-group mb-3">
           <label>E-mail</label>
-          <input type="text" placeholder="Ваша електронна пошта" class="form-control no-border" />
+          <input type="text" placeholder="Ваша електронна пошта" name="email" class="form-control no-border" />
         </div>
         <div class="form-group mb-3">
           <label>Чим ми можемо Вам допомогти?</label>
-          <input type="text" placeholder="Коротко опишіть, з якого приводу Вам необхідна консультація" class="form-control no-border" />
+          <input type="text" placeholder="Коротко опишіть, з якого приводу Вам необхідна консультація" name="message" class="form-control no-border" />
         </div>
         <div class="form-group my-4 d-flex justify-content-center">
           <button class="modal__btn">Замовити дзвінок</button>
@@ -1056,17 +1056,17 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6 animated" >
-            <img src="assets/img/office.png" class="img-fluid about-img" alt="">
-            <img src="assets/img/office2.png" class="position-absolute top-200 start-0 about-img" alt="">
-            <img src="assets/img/Rectangle.png" class="position-absolute top-200 start-0" alt="">
-              <img src="assets/img/Rectangle.png" class="position-absolute bottom-200 end-80" alt="">
+          <div class="col-lg-6 animated about-img-container" >
+            <img src="assets/img/office.png" class="img-fluid about-img about-img1" alt="">
+            <img src="assets/img/office2.png" class="position-absolute top-200 start-0 about-img about-img2" alt="">
+            <img src="assets/img/Rectangle.png" class="position-absolute top-200 start-0 about-rec1" alt="">
+              <img src="assets/img/Rectangle.png" class="position-absolute bottom-200 end-80 about-rec2" alt="">
 
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
             <div class="w-75">
-            <h2>Про нас</h2>
-            <p class="fst-italic">
+            <h2 class="mb-3">Про нас</h2>
+            <p class="fst-italic mb-5">
             Об’єднали команду талановитих, висококваліфікованих  адвокатів, юристів й науковців. Ми гарантуємо:
             </p>
             <ul>
@@ -1234,22 +1234,22 @@
                 </div>
           
                 <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form modal__form"> -->
-                  <form action="forms/contact.php" method="post" role="form" class="modal__form">
+                  <form action="https://formspree.io/f/xknyrjyd" method="post" role="form" class="modal__form">
                   <div class="form-group mb-4">
                     <label>Як до Вас звeртатися?</label>
-                    <input type="text" placeholder="Введіть Ваше ім’я" class="form-control no-border" />
+                    <input type="text" placeholder="Введіть Ваше ім’я" name="fullName" class="form-control no-border" />
                   </div>
                   <div class="form-group mb-4">
                     <label>Ваш номер телефону</label>
-                    <input type="text" placeholder="000-00-00-000" class="form-control no-border" />
+                    <input type="text" placeholder="000-00-00-000" name="phoneNumber" class="form-control no-border" />
                   </div>
                   <div class="form-group mb-4">
                     <label>E-mail</label>
-                    <input type="text" placeholder="Ваша електронна пошта" class="form-control no-border" />
+                    <input type="text" placeholder="Ваша електронна пошта" name="email" class="form-control no-border" required />
                   </div>
                   <div class="form-group mb-4">
                     <label>Чим ми можемо Вам допомогти?</label>
-                    <input type="text" placeholder="Коротко опишіть, з якого приводу Вам необхідна консультація" class="form-control no-border" />
+                    <input type="text" placeholder="Коротко опишіть, з якого приводу Вам необхідна консультація" name="message" class="form-control no-border" />
                   </div>
                   <div class="form-group my-4 d-flex justify-content-center">
                     <button class="form__btn">Замовити дзвінок</button>

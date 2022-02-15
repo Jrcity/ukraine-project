@@ -226,6 +226,12 @@ h3 {
   }
 }
 
+@media (max-width: 360px) {
+  #header {
+    background-color: red;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1196,6 +1202,33 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  padding: 120px 0 !important;
+  position: relative;
+}
+
+.about-img-container {
+  position: relative;
+}
+
+.about-img1 {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.about-img2 {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.about-rec2 {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 32px;
@@ -1218,6 +1251,7 @@ section {
 }
 
 .about-img {
+  width: 50%;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1233,14 +1267,14 @@ section {
 }
 
 #first-bullet::after {
-  /* content: '';
+  content: '';
   display: block;
   border-left: 2px solid #070707;
-  height: 195px !important;
+  height: 209px !important;
   position: absolute;
   right: 50.8%;
-  top: 55.5%;
-  z-index: -10; */
+  top: 40.5%;
+  z-index: -10;
 }
 
 /*--------------------------------------------------------------
