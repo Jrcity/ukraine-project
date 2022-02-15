@@ -99,6 +99,10 @@ h3 {
   max-height: 40px;
 }
 
+#main-nav {
+  margin-right: auto;
+}
+
 .goog-te-combo {
   display: block;
   width: 100%;
@@ -118,17 +122,57 @@ h3 {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.nav-link:link,
+.nav-link:visited {
+  background-color: transparent;
+  color: #333;
+  font-weight: bold;
+  margin-left: 12px;
+  border-radius: 100px;
+  padding: 8px 24px;
+  font-size: 16px;
+  border: none;
+}
+
+.nav-link:link.active,
+.nav-link:visited.active {
+  color: red;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  margin-left: 12px !important;
+  border-radius: 100px;
+  padding: 8px 24px;
+  font-size: 16px;
+  border: none;
+}
+
 .nav-link:hover .dropdown-menu {
   display: block;
 }
 
 .dropbtnHover {
-  /* background-color: #04aa6d; */
+  background-color: transparent;
   color: #333;
   font-weight: bold;
-  margin-left: 32px;
+  margin-left: 12px !important;
   border-radius: 100px;
-  padding: 16px 32px;
+  padding: 8px 24px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtnHover:hover {
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  margin-left: 12px !important;
+  border-radius: 100px;
+  padding: 8px 24px;
   font-size: 16px;
   border: none;
 }

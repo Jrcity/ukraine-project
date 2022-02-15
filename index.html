@@ -120,13 +120,19 @@
             <img src="assets/img/Frame.png" alt="" class="img-fluid">
           </a>
 
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <!-- <a href="#" class="nav-link text-secondary">
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" id="main-nav">
+            <!-- <li>
+              <a href="#" class="nav-link text-secondary">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                 Home
-              </a> -->
+              </a>
               <div id="google_translate_element"></div>
+            </li> -->
+            <li>
+              <a href="#" class="nav-link active">UA</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">ENG</a>
             </li>
             <li class="ml-4">
               <!-- <a href="#" class="nav-link text-white">
@@ -1345,15 +1351,15 @@
     //     );
     //   }
 
-    function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-      {
-        pageLanguage: 'ua' , 
-        includedLanguages: 'ua,en'
-        // includedLanguages : 'ar,xx,yy'
-      }, 
-      'google_translate_element');
-  }
+  //   function googleTranslateElementInit() {
+  //   new google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: 'ua' , 
+  //       includedLanguages: 'ua,en'
+  //       // includedLanguages : 'ar,xx,yy'
+  //     }, 
+  //     'google_translate_element');
+  // }
 
     /****************************
     // SHOW MENU
@@ -1574,11 +1580,11 @@ overlay.addEventListener('click', closeModal);
     
 
   </script>
-  <script
+  <!-- <script
   type="text/javascript"
   src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"
-></script>
+></script> -->
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
