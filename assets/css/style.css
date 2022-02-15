@@ -652,6 +652,7 @@ h3 {
   height: 100vh;
   background: #fff;
   padding-top: 82px;
+  background-color: #edf5ff;
 }
 #hero h1 {
   margin: 0;
@@ -1176,6 +1177,28 @@ section {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.about .bi {
+  background-color: #070707;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #070707;
+}
+
+.list-bullet {
+  margin-left: -32px;
+}
+
+#first-bullet::after {
+  /* content: '';
+  display: block;
+  border-left: 2px solid #070707;
+  height: 195px !important;
+  position: absolute;
+  right: 50.8%;
+  top: 55.5%;
+  z-index: -10; */
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1588,11 +1611,40 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+#team {
+  background-color: #edf5ff;
+  padding: 68px 0 !important;
+}
+
+.team-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-range .team-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: -12px;
+}
+
+.team-range h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #eb1817 !important;
+}
 .team .member {
   text-align: center;
   margin-bottom: 20px;
   padding: 30px 20px;
-  background: #fff;
+  background: #edf5ff;
 }
 .team .member img {
   max-width: 100%;
@@ -1660,6 +1712,13 @@ section {
 }
 .contact__info {
   margin: 0 auto;
+}
+
+.address-icon {
+  font-weight: bold !important;
+  color: #070707 !important;
+  width: 24px;
+  height: 24px;
 }
 
 .social__link__menu {
