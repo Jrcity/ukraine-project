@@ -208,13 +208,13 @@ h3 {
   display: block;
 }
 
-.dropdownHover:hover .dropbtnHover {
-  /* background-color: #3e8e41; */
-}
-
 @media (max-width: 360px) {
-  #header {
-    background-color: red;
+  .nav__slide > li {
+    position: absolute;
+    transform: translateY(150px);
+  }
+  .nav__slide__btn__toggle {
+    padding: 20px !important;
   }
 }
 
@@ -700,6 +700,7 @@ h3 {
   z-index: 1000;
   top: 20px;
   right: 170px;
+  pointer-events: none;
 }
 
 #hero .btn-get-started,
@@ -2307,7 +2308,7 @@ section {
   outline: 0;
   background: transparent;
   border-radius: 50px;
-  padding: 10px;
+  padding: 20px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -2319,6 +2320,7 @@ section {
 }
 .nav__slide__btn__toggle:nth-child(1) {
   position: absolute;
+  padding: 20px !important;
 }
 
 .nav__slide__btn__toggle:nth-child(1),
