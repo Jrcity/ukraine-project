@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+ 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -78,7 +78,7 @@ h3 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0 !important;
+  padding: 0px 0 !important;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.05);
   /* height: 100vh; */
 }
@@ -214,7 +214,7 @@ h3 {
     transform: translateY(150px);
   }
   .nav__slide__btn__toggle {
-    padding: 20px !important;
+    padding: 10px !important;
   }
 }
 
@@ -2316,13 +2316,13 @@ section {
   }
 }
 
-#header {
+/* #header {
   justify-content: space-around;
   display: flex;
   width: 100%;
 
   align-items: center;
-}
+} */
 .nav__container,
 .nav__lang {
   position: relative;
@@ -2387,8 +2387,10 @@ section {
 }
 .nav__slide > li {
   margin-top: 40px;
-  top: -200px !important;
   position: relative;
+}
+.nav__slide > li:last-child{
+  margin-bottom: 20px !important;
 }
 .btn-container {
   display: flex !important;
