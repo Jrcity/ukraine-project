@@ -1403,10 +1403,10 @@ section {
   content: '';
   display: block;
   border-left: 2px solid #070707;
-  height: 209px !important;
+  height: 215px !important;
   position: absolute;
   right: 50.8%;
-  top: 40.5%;
+  top: 37%;
   z-index: -10;
 }
 
