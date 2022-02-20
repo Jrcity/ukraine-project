@@ -4,11 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
- 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -679,7 +679,7 @@ h3 {
   background-color: #edf5ff;
 }
 .hero-col1 {
-  margin-left: 4.8rem
+  margin-left: 4.8rem;
 }
 #hero h1 {
   margin: 0;
@@ -882,7 +882,10 @@ h3 {
   backdrop-filter: blur(-1px);
   z-index: 10000;
 }
-
+.service__modal__form__overlay > .close-modal {
+  margin-top: 225px;
+  margin-right: 520px;
+}
 @media (max-width: 700px) {
   #header {
     padding: 10px 0 !important;
@@ -1091,7 +1094,7 @@ h3 {
     display: none;
   }
   .service__modal__form__overlay > .close-modal {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-right: 10px;
   }
   .footer__menu {
@@ -2405,7 +2408,7 @@ section {
   margin-top: 40px;
   position: relative;
 }
-.nav__slide > li:last-child{
+.nav__slide > li:last-child {
   margin-bottom: 20px !important;
 }
 .btn-container {
@@ -2476,56 +2479,52 @@ section {
 * ********************/
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    #header {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      height: auto;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: auto;
+  }
 
-    #header #brand-logo {
-      margin-top: 1.5rem;
-      margin-left: 1rem;
-    }
+  #header #brand-logo {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
 
-    #header .tamara-logo {
-      width: 80px;
-    }
+  #header .tamara-logo {
+    width: 80px;
+  }
 
-    .nav__container .nav__lang a {
-      font-size: 0.8rem;
-    }
+  .nav__container .nav__lang a {
+    font-size: 0.8rem;
+  }
 
-    .hero-col1 {
-      margin-left: 0;
-    }
+  .hero-col1 {
+    margin-left: 0;
+  }
 
-    .hero-col1 h1 {
-      font-size: 2rem !important;
-    }
+  .hero-col1 h1 {
+    font-size: 2rem !important;
+  }
 
-    .hero-col1 p {
-      margin-top: -0.2rem !important;
-      font-size: 1.2rem !important;
-    }
+  .hero-col1 p {
+    margin-top: -0.2rem !important;
+    font-size: 1.2rem !important;
+  }
 
-    .btn-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .btn-get-started,
-    .btn-get-started2{
-      font-size: 0.5rem !important;
-    }
+  .btn-get-started,
+  .btn-get-started2 {
+    font-size: 0.5rem !important;
+  }
 
-    .btn-get-started {
-      font-weight: bold !important;
-    }
+  .btn-get-started {
+    font-weight: bold !important;
+  }
 }
