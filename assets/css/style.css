@@ -2471,8 +2471,20 @@ section {
     #header {
       display: flex;
       align-items: center;
+      padding: 0;
+      height: auto;
     }
+
+    #header #brand-logo {
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+    }
+
     #header .tamara-logo {
-      width: 50px;
+      width: 90px;
+    }
+
+    .nav__container .nav__lang a {
+      font-size: 0.8rem;
     }
 }
