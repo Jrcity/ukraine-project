@@ -673,13 +673,17 @@ h3 {
   padding-top: 82px;
   background-color: #edf5ff;
 }
+.hero-col1 {
+  margin-left: 4.8rem
+}
 #hero h1 {
   margin: 0;
   font-size: 60px;
   font-weight: 900;
   line-height: 56px;
   color: #3e4450;
-  margin-bottom: 1.5rem !important;
+  margin-top: 2.2rem !important;
+  margin-bottom: 2.2rem !important;
 }
 #hero h2 {
   color: #858ea1;
@@ -941,11 +945,11 @@ h3 {
     display: inline-block;
   }
 
-  .img__pos {
+  /* .img__pos {
     left: 250px;
     top: -100px;
     position: relative;
-  }
+  } */
   .rec01 {
     right: -1px !important;
     top: -80px !important;
@@ -2242,11 +2246,11 @@ section {
 /* ++++ JRCITY GENERAL STYLES ++++ */
 /* ______________________ */
 @media screen and (min-width: 1399px) {
-  .last__hero__component,
+  /* .last__hero__component,
   .img-container {
     left: 20vw;
     position: relative !important;
-  }
+  } */
   .img-container {
     left: 0;
     margin-right: -20vw;
@@ -2280,11 +2284,11 @@ section {
     justify-content: space-around !important;
     flex-wrap: nowrap !important;
   }
-  .last__hero__component,
+  /* .last__hero__component,
   .img-container {
     left: 10vw;
     position: relative !important;
-  }
+  } */
   .img-container {
     left: 0;
     margin-left: 2vw;
@@ -2299,13 +2303,13 @@ section {
     margin-top: 100px;
     margin-right: 10vw;
   }
-  .img__pos {
+  /* .img__pos {
     left: 100px !important;
     top: -80px;
     position: relative;
     z-index: 999;
     pointer-events: none;
-  }
+  } */
   .rec01 {
     right: -4vw !important;
     top: -140px !important;
@@ -2395,7 +2399,7 @@ section {
 .btn-container {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-around !important;
+  /* justify-content: space-around !important; */
   flex-wrap: nowrap;
 }
 .service__box {
