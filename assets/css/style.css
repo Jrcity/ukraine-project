@@ -757,6 +757,10 @@ h3 {
   box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
 }
 
+.img__pos{
+  margin-top: 3.8rem;
+}
+
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -886,7 +890,7 @@ h3 {
   margin-top: 225px;
   margin-right: 520px;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   #header {
     padding: 10px 0 !important;
   }
@@ -908,7 +912,7 @@ h3 {
   .img-container {
     margin: 0 auto;
   }
-}
+} */
 
 @media (max-width: 1024px) {
   #header {
@@ -953,11 +957,12 @@ h3 {
     display: inline-block;
   }
 
-  /* .img__pos {
-    left: 250px;
+  .img__pos {
+    /* margin-top: 9.8rem; */
+    /* left: 250px;
     top: -100px;
-    position: relative;
-  } */
+    position: relative; */
+  }
   .rec01 {
     right: -1px !important;
     top: -80px !important;
@@ -1054,9 +1059,7 @@ h3 {
     display: flex;
   }
   .img__pos {
-    left: 0px !important;
-    top: 10px;
-    position: relative;
+    /* margin-top: 8.8rem; */
   }
   .rec01 {
     right: 20px !important;
@@ -1097,15 +1100,20 @@ h3 {
     margin-top: 170px;
     margin-right: 10px;
   }
+<<<<<<< HEAD
   .footer__menu {
     font-size: 0.44398rem;
+=======
+  /* .footer__menu {
+    font-size: 0.49398rem;
+>>>>>>> leastmaster
     width: 100%;
     justify-content: space-around;
-  }
+  } */
 }
 
 /* screen forking */
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
   }
@@ -1123,14 +1131,14 @@ h3 {
   .btn-container {
     width: 300px;
   }
-}
-@media (max-width: 384px) {
+} */
+/* @media (max-width: 384px) {
   .btn-get-started,
   .btn-get-started2 {
     font-size: 0.4rem !important;
-    /* width: 200px; */
+    /* width: 200px; 
   }
-}
+} */
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -1339,7 +1347,7 @@ section {
 # About
 --------------------------------------------------------------*/
 #about {
-  padding: 120px 0 !important;
+  padding: 60px 0 !important;
   position: relative;
 }
 
@@ -2353,6 +2361,7 @@ section {
 .nav__lang a {
   color: #152a47;
   font-weight: 400;
+  cursor: pointer;
 }
 .nav__lang a:first-child {
   margin-right: 20px;
@@ -2488,7 +2497,7 @@ section {
   }
 
   #header #brand-logo {
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     margin-left: 1rem;
   }
 
@@ -2500,8 +2509,13 @@ section {
     font-size: 0.8rem;
   }
 
+  .img__pos{
+    margin-top: -2.3rem !important;
+  }
+
   .hero-col1 {
     margin-left: 0;
+    margin-top: -10rem !important;
   }
 
   .hero-col1 h1 {
@@ -2526,5 +2540,26 @@ section {
 
   .btn-get-started {
     font-weight: bold !important;
+  }
+
+  .about {
+    margin-top: 40px !important;
+  }
+
+  .footer__menu {
+    flex: 1;
+  }
+
+  .footer__menu {
+    font-size: 0.65rem
+  }
+
+  .footer__menu li:nth-child(3){
+    text-align: center;
+  }
+
+
+  .copyright {
+    margin-bottom: -3.2rem
   }
 }
