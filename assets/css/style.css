@@ -1097,16 +1097,11 @@ h3 {
     display: none;
   }
   .service__modal__form__overlay > .close-modal {
-    margin-top: 170px;
+    margin-top: 175px;
     margin-right: 10px;
   }
-<<<<<<< HEAD
   .footer__menu {
     font-size: 0.44398rem;
-=======
-  /* .footer__menu {
-    font-size: 0.49398rem;
->>>>>>> leastmaster
     width: 100%;
     justify-content: space-around;
   } */
