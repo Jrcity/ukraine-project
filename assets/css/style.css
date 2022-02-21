@@ -890,6 +890,10 @@ h3 {
   margin-top: 225px;
   margin-right: 520px;
 }
+
+
+
+
 /* @media (max-width: 700px) {
   #header {
     padding: 10px 0 !important;
@@ -1097,7 +1101,7 @@ h3 {
     display: none;
   }
   .service__modal__form__overlay > .close-modal {
-    margin-top: 179px;
+    margin-top: 178px;
     margin-right: 10px;
   }
   .footer__menu {
