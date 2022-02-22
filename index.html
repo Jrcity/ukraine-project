@@ -2772,9 +2772,11 @@
       }
 
       function changeLanguageByButtonClick(lang) {
+        const nav__lang = document.querySelectorAll('.nav__lang a');
         var selectField = document.querySelector(
           '#google_translate_element select'
         );
+
         for (var i = 0; i < selectField.children.length; i++) {
           var option = selectField.children[i];
           // find desired langauge and change the former language of the hidden selection-field
@@ -2784,6 +2786,13 @@
             selectField.dispatchEvent(new Event('change'));
             break;
           }
+        }
+        if (lang == 'uk') {
+          nav__lang[0].style.color = '#eb1817';
+          nav__lang[1].style.color = '#152a47';
+        } else {
+          nav__lang[1].style.color = '#eb1817';
+          nav__lang[0].style.color = '#152a47';
         }
       }
     </script>

@@ -38,7 +38,7 @@
   }
   .img__pos {
     max-width: 800px;
-    width: 100%;
+    width: 700px;
   }
   .img__pos + img,
   .rec01,
@@ -47,16 +47,16 @@
     object-fit: contain;
   }
   .rec01 {
-    top: -80vh;
+    top: -82vh;
     left: 46vw;
   }
 
   .rec01 + img {
     top: 50vh;
-    left: 77vw;
+    left: 79vw;
   }
   .img__pos + img {
-    top: 70vh;
+    top: 66vh;
     left: 100px;
   }
   #hero {
@@ -75,12 +75,12 @@
   }
 
   #hero h1 {
-    font-size: 5rem;
+    font-size: 5.2rem;
     padding: 0.25rem;
   }
 
   #hero p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding-left: 0.25rem;
   }
 
@@ -459,11 +459,11 @@
 
   .rec01 + img {
     top: 38vh;
-    left: 80vw;
+    left: 89vw;
   }
   .img__pos + img {
     top: 54vh;
-    left: 27vw;
+    left: 24vw;
   }
   .hero-col1 {
     margin-left: 0;
