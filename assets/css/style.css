@@ -87,7 +87,7 @@ h3 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 0px 0;
+  padding: 0.9rem 0;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.05);
   /* height: 100vh; */
 }
@@ -667,9 +667,9 @@ transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 #hero {
   /* position: relative */
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: #fff;
-  padding-top: 82px;
+  /* padding-top: 82px; */
   background-color: #edf5ff;
 }
 .hero-col1 {
@@ -1273,10 +1273,10 @@ section {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 80px rgba(0, 0, 0, 0.12); */
 
   min-height: 50px;
   width: 100%;
@@ -1965,7 +1965,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  /* padding: 10px; */
 }
 .nav__lang a {
   color: #152a47;
@@ -2267,7 +2267,7 @@ section {
   }
   .img__pos {
     width: 100%;
-    max-width: 50vw !important;
+    /* max-width: 50vw !important; */
   }
   .img__pos + img {
     top: 18vh;
@@ -2550,7 +2550,7 @@ section {
     padding: 0;
     margin: 0;
     height: auto;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
   #header .container {
     /* overright bootstrap rule */
@@ -2558,7 +2558,7 @@ section {
   }
 
   .tamara-logo {
-    max-width: 390px;
+    max-width: 250px;
     width: 100vw;
     margin: auto;
     object-fit: contain;
@@ -2567,7 +2567,7 @@ section {
     margin-left: -30px;
   }
   .nav__container .nav__lang a {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   /* overwrite inline style */
   .fa-signal {
@@ -2612,10 +2612,10 @@ section {
     padding-left: 0.25rem;
   }
   #hero .img__pos {
-    top: 10px;
+    /* top: 10px;
     left: 0;
     right: 0;
-    max-width: 400px !important;
+    max-width: 400px !important; */
   }
 
   .img__pos + img {
@@ -2730,3 +2730,44 @@ section {
 /* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
  move the styles to different file 
 } */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  #header {
+    /* background: #fff; */
+    /* transition: all 0.5s; */
+    /* z-index: 997; */
+    /* background-color: red; */
+    /* padding: 0.4rem 0 !important; */
+    /* box-shadow: 0 0 32px rgba(0, 0, 0, 0.05); */
+    /* height: 100vh; */
+  }
+
+  /* .nav__container {
+    margin-left: -28px !important;
+  }
+
+  #menu-text {
+    font-size: 0.9rem !important;
+  }
+
+  .nav__container,
+  .nav__lang {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .nav__lang a {
+    color: #152a47;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 0.9rem !important;
+  }
+  .nav__lang a:first-child {
+    margin-right: 20px;
+    color: #eb1817;
+    font-weight: 600;
+  } */
+}
