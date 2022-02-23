@@ -2773,7 +2773,25 @@ section {
   }
 
   .hero-header {
+    width: 100% !important;
     margin-top: -80px !important;
+    margin-left: -80px !important;
+  }
+
+  .btn-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100vw !important;
+  }
+
+  .btn-container a {
+    font-size: 0.6rem !important;
+  }
+
+  .btn-get-started,
+  .btn-get-started2 {
+    /* width: 50% !important; */
+    /* flex: 1 !important; */
   }
 
   /* 
