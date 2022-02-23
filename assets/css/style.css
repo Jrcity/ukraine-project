@@ -2775,7 +2775,7 @@ section {
   .hero-header {
     width: 100% !important;
     margin-top: -80px !important;
-    margin-left: -80px !important;
+    margin-left: -20px !important;
   }
 
   .btn-container {
@@ -2785,7 +2785,7 @@ section {
   }
 
   .btn-container a {
-    font-size: 0.6rem !important;
+    font-size: 0.5rem !important;
   }
 
   .btn-get-started,
