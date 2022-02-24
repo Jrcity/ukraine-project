@@ -1049,12 +1049,18 @@ section {
 
 .service__box {
   position: relative;
+  /* height: 300px !important; */
+}
+
+.service__box:hover,
+.service__box:hover .icon-box {
+  background-color: #f70521;
 }
 
 .service__box:hover h4 {
   position: absolute;
   left: 50%;
-  top: 60px;
+  top: 25px;
   transform: translate(-50%);
   transition: all 0.4s;
 }
@@ -1073,19 +1079,19 @@ section {
 .service__box:hover::after {
   content: 'Дізнатися більше';
   display: block;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
   padding: 0.8rem 1.2rem;
-  color: #070707;
+  color: #fff;
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #070707;
+  border: 2px solid #fff;
   border-radius: 100px;
   cursor: pointer;
   transition: all 5s;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .service__card {
@@ -1278,7 +1284,7 @@ section {
     0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12); */
 
-  min-height: 50px;
+  /* height: 50px; */
   width: 100%;
   margin: 10px auto;
   background: white;
@@ -1312,7 +1318,7 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  border-color: #eaecef;
+  /* border-color: #eaecef; */
 }
 .services .icon-box:hover h4 a {
   color: #808080;
@@ -2064,9 +2070,17 @@ section {
 }
 
 /* ====== SERVICE & FEATURES STYLES ====== */
+.box__row {
+  /* height: 25% !important; */
+  display: flex !important;
+}
+
 .service__box {
   border-radius: 25px;
-  height: 280px;
+  height: 200px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .icon-box {
@@ -2076,14 +2090,13 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 80px;
-  height: 200px;
+  height: 100% !important;
 }
 .service__box:hover .icon-box,
 .service__box:hover {
-  color: #070707;
-  transition: all 0.4s;
-  /* height: 300px ; */
-  /* color: #fff ; */
+  color: #fff;
+  transition: all 0.2s;
+  /* height: 210px !important; */
 }
 
 .service__modal__form__overlay {
