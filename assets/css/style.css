@@ -2392,7 +2392,138 @@ section {
 }
 
 /* largest pc screen dimension */
-@media screen and (min-width: 1025px) and (max-width: 2279px) {
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+  #header {
+    /* background-color: blue; */
+    font-size: 1.5rem;
+  }
+  #header .container {
+    /* overright bootstrap rule */
+    flex-wrap: nowrap !important;
+  }
+
+  .tamara-logo {
+    max-width: 300px;
+    width: 150px;
+    margin: auto;
+    object-fit: contain;
+  }
+  .nav__container .nav__lang a {
+    font-size: 1.5rem;
+  }
+  .img__pos {
+    width: 100%;
+    max-width: 50vw !important;
+  }
+  .img__pos + img {
+    top: 18vh;
+    right: 10vw !important;
+  }
+  #modal {
+    width: 70%;
+    left: 18%;
+  }
+  .rec01 + img {
+    top: 50vh;
+    right: -10vw !important;
+    pointer-events: none;
+  }
+
+  /* about rectangles adjustment */
+  .about-img1,
+  .about-img2 {
+    width: 40%;
+  }
+  .about-img2 {
+    top: 2vh;
+    left: 15vw !important;
+  }
+  .about-img1 {
+    top: 20vh;
+    left: 2vw !important;
+  }
+
+  .about-rec1,
+  .about-rec2 {
+    width: 20%;
+    max-width: 50vw !important;
+  }
+  .about-rec1 {
+    left: 5vw;
+    top: 4vh;
+  }
+  .about-rec2 {
+    right: 10vw;
+    top: 35vh;
+  }
+
+  .about__list_items {
+    position: relative !important;
+  }
+
+  #first-bullet::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid #070707;
+    height: 250px !important;
+    text-align: center;
+    position: absolute;
+    top: 200px !important;
+    left: 5px !important;
+    z-index: -10;
+    padding: 20px 0;
+
+    /* content: '';
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid #070707;
+    height: 200px !important;
+    text-align: center;
+    position: absolute;
+    top: 185px !important;
+    left: 5px !important;
+    z-index: -10;
+    padding: 20px 0; */
+  }
+
+  .footer__menu {
+    /* display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vmin;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: -15px; */
+  }
+
+  .footer__menu li a:link {
+    width: fit-content;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__menu {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vmin;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: -100px;
+    grid-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__menu li a:link {
+    width: fit-content;
+    font-size: xx-large;
+    margin: 0;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 2279px) {
   #header {
     /* background-color: red; */
     font-size: 1.5rem;
@@ -2466,11 +2597,11 @@ section {
     display: flex;
     justify-content: center;
     border-left: 2px solid #070707;
-    height: 140px;
+    height: 250px !important;
     text-align: center;
     position: absolute;
-    top: 140px;
-    left: calc(100% / 2);
+    top: 200px !important;
+    left: 5px !important;
     z-index: -10;
     padding: 20px 0; */
 
@@ -2478,11 +2609,10 @@ section {
     display: flex;
     justify-content: center;
     border-left: 2px solid #070707;
-    height: 250px !important;
+    height: 200px !important;
     text-align: center;
     position: absolute;
-    top: 200px !important;
-    /* left: calc(100% / 2); */
+    top: 185px !important;
     left: 5px !important;
     z-index: -10;
     padding: 20px 0;
