@@ -332,7 +332,7 @@
             <p>Сфери юридичної практики</p>
           </div>
 
-          <div class="row sm__scroll__x box__row">
+          <div class="row sm__scroll__x box__row mb-3" id="visibledBoxes">
             <div class="col-lg-4 col-md-6 d-flex service__box" id="box1">
               <div
                 class="icon-box"
@@ -2618,11 +2618,7 @@
                 <li><a href="#hero">Головна</a></li>
                 <li><a href="#about">Послуги</a></li>
                 <li>
-                  <a
-                    class="align-self-center"
-                    href="#team"
-                    >Про нас</a
-                  >
+                  <a class="align-self-center" href="#team">Про нас</a>
                 </li>
                 <li><a href="#contact">Контакти</a></li>
               </ul>
@@ -2872,11 +2868,13 @@
     // HIDDEN BOX
     ****************************/
       const hiddenBox = document.getElementById('hiddenBox');
+      const visibledBoxes = document.getElementById('visibledBoxes');
       const btnShowHiddenBox = document.getElementById('btnShowHiddenBox');
       const btnHideServiceBox = document.getElementById('btnHideServiceBox');
       const hideAll = document.getElementsByClassName('hideAll');
 
       btnShowHiddenBox.addEventListener('click', function () {
+        // visibledBoxes.style.marginBottom = '150px';
         hiddenBox.classList.toggle('hidden__box');
         // hiddenBox.style.display = 'block';
       });

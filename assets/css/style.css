@@ -1057,6 +1057,10 @@ section {
   background-color: #f70521;
 }
 
+#hiddenBox {
+  /* margin-top: 150px !important; */
+}
+
 .service__box:hover h4 {
   position: absolute;
   left: 50%;
